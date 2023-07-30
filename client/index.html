@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login and Sign Up Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container" id="signup-form">
+    <h2>Sign Up</h2>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter your password">
+    </div>
+    <button onclick="signup()">Sign Up</button>
+    <p>Already have an account? <a href="#" onclick="showSigninForm()">Sign In</a></p>
+  </div>
+
+  <div class="form-container signin-form" id="signin-form" style="display: none;">
+    <h2>Sign In</h2>
+    <div class="form-group">
+      <label for="signin-email">Email:</label>
+      <input type="email" id="signin-email" placeholder="Enter your email">
+    </div>
+    <div class="form-group">
+      <label for="signin-password">Password:</label>
+      <input type="password" id="signin-password" placeholder="Enter your password">
+    </div>
+    <button onclick="signin()">Sign In</button>
+    <p>Don't have an account? <a href="#" onclick="showSignupForm()">Sign Up</a></p>
+  </div>
+
+  <script src="index.js"></script>
+  <script src="client.js"></script>
+
+</body>
+</html>
